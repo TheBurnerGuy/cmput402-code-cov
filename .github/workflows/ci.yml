@@ -26,5 +26,13 @@ jobs:
     - name: Run tests
       run: ./gradlew test
 
-    # TODO: Add Codecov (make sure to set up on codecov.io as well) 
+    # Add Codecov (make sure to set up on codecov.io as well)
     #       for test coverage reports
+    - name: Add codecov
+      uses: codecov/codecov-action@v1
+      with:
+        token: {{ secrets.cctoken }}
+        file: ./reports/jacoco/test/jacocoTestReport.xml
+        flags: unittests
+        fail_ci_if_error: true
+
