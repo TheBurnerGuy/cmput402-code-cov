@@ -31,7 +31,7 @@ jobs:
     - name: Add codecov
       uses: codecov/codecov-action@v1
       with:
-        token: {{ secrets.cctoken }}
+        token: ${{ secrets.cctoken }}
         file: ./reports/jacoco/test/jacocoTestReport.xml
         flags: unittests
         fail_ci_if_error: true
