@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="code-coverage-api.main" target="1.8" />
       <module name="code-coverage-api.test" target="1.8" />
+      <module name="code-coverage-tutorial.main" target="1.8" />
+      <module name="code-coverage-tutorial.test" target="1.8" />
       <module name="hello-friends.main" target="1.8" />
       <module name="hello-friends.test" target="1.8" />
     </bytecodeTargetLevel>
